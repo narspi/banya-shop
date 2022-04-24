@@ -1,0 +1,21 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  padding-left: 0;
+  list-style: none;
+  &__item {
+    margin: 0 8px 13px;
+    a,span {
+      font-family: "Roboto",sans-serif;
+      color: $black-light;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    
+    a:hover {
+        color: $blue;
+    }
+  }
+}

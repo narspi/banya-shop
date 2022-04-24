@@ -1,0 +1,315 @@
+{
+    "items": [
+        {
+            "images": [
+                "./images/item-1.jpg",
+                "./images/item-1.jpg",
+                "./images/item-1.jpg"
+            ],
+            "new": true,
+            "comments": 1,
+            "likes": 256,
+            "tags": [
+                "Сауна",
+                "34 м<sup>2</sup>",
+                "EOS"
+            ],
+            "location": "Москва, квартира",
+            "company": "Твой пар"
+        },
+        {
+            "images": [
+                "./images/item-2.jpg",
+                "./images/item-2.jpg",
+                "./images/item-2.jpg",
+                "./images/item-2.jpg"
+            ],
+            "likes": 1,
+            "tags": [
+                "Сауна",
+                "65 м<sup>2</sup>",
+                "Harvia"
+            ],
+            "location": "Королев, дом",
+            "company": "95 градусов"
+        },
+        {
+            "images": [
+                "./images/item-3.jpg",
+                "./images/item-3.jpg",
+                "./images/item-3.jpg",
+                "./images/item-3.jpg",
+                "./images/item-3.jpg",
+                "./images/item-3.jpg"
+            ],
+            "tags": [
+                "Сауна",
+                "65 м<sup>2</sup>",
+                "Harvia",
+                "от 1 400 000 ₽"
+            ],
+            "location": "Москва, квартира",
+            "company": "95 градусов"
+        },
+        {
+            "images": [
+                "./images/item-4.jpg"   
+            ],
+            "tags": [
+                "Сауна",
+                "65 м<sup>2</sup>",
+                "Harvia Cillindro"  
+            ],
+            "location": "Москва, квартира",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-5.jpg"   
+            ],
+            "tags": [
+                "Сауна",
+                "34 м<sup>2</sup>",
+                "IKI",
+                "амбарная доска"
+            ],
+            "location": "Москва, квартира",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-6.jpg",  
+                "./images/item-6.jpg",  
+                "./images/item-6.jpg",  
+                "./images/item-6.jpg",  
+                "./images/item-6.jpg",  
+                "./images/item-6.jpg"   
+            ],
+            "tags": [
+                "Сауна",
+                "11 м<sup>2</sup>",
+                "Helo Pikkutonttu"
+            ],
+            "location": "КП «Нахабино Кантри», дом",
+            "company": "95 градусов"
+        },
+        {
+            "images": [
+                "./images/item-7.jpg" 
+            ],
+            "tags": [
+                "SPA-зона",
+                "2000 м<sup>2</sup>",
+                "Klafs"
+            ],
+            "location": "Москва, Barvikha Hotel & SPA",
+            "company": "ASPA"
+        },
+        {
+            "images": [
+                "./images/item-8.jpg" 
+            ],
+            "tags": [
+                "SPA-зона",
+                "2000 м<sup>2</sup>",
+                "Klafs" 
+            ],
+            "company": "ASPA"
+        },
+        {
+            "images": [
+                "./images/item-9.jpg",
+                "./images/item-9.jpg",
+                "./images/item-9.jpg",
+                "./images/item-9.jpg",
+                "./images/item-9.jpg",
+                "./images/item-9.jpg"
+            ],
+            "comments": 1,
+            "likes": 256,
+            "tags": [
+                "Травяная сауна",
+                "34 м<sup>2</sup>",
+                "Lang Sauna-Therm" 
+            ],
+            "location": "Москва, Termoland",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-10.jpg",
+                "./images/item-10.jpg",
+                "./images/item-10.jpg",
+                "./images/item-10.jpg"
+            ],
+            "likes": 1,
+            "tags": [
+                "Гималайская сауна",
+                "65 м<sup>2</sup>",
+                "IKI Pro"
+            ],
+            "location": "Москва, Termoland",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-11.jpg",
+                "./images/item-11.jpg",
+                "./images/item-11.jpg",
+                "./images/item-11.jpg",
+                "./images/item-11.jpg",
+                "./images/item-11.jpg"
+            ],
+            "comments": 2,
+            "likes": 134,
+            "tags": [
+                "Сауна",
+                "65 м<sup>2</sup>",
+                "Helo Saunatonttu",
+                "от 1 400 000 ₽"
+            ],
+            "location": "Москва, Termoland",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-12.jpg",
+                "./images/item-12.jpg",
+                "./images/item-12.jpg",
+                "./images/item-12.jpg"
+            ],
+            "tags": [
+                "Нефритовая сауна",
+                "65 м<sup>2</sup>",
+                "IKI"
+            ],
+            "location": "Москва, Termoland",
+            "company": "Контакт Плюс"
+        },
+        {
+            "images": [
+                "./images/item-5.jpg"
+            ],
+            "tags": [
+                "Сауна",
+                "34 м<sup>2</sup>",
+                "IKI", 
+                "амбарная доска"
+            ],
+            "location": "Москва, квартира",
+            "company": "Контакт Плюс"
+            },
+            {
+                "images": [
+                    "./images/item-6.jpg",
+                    "./images/item-6.jpg",
+                    "./images/item-6.jpg",
+                    "./images/item-6.jpg",
+                    "./images/item-6.jpg",
+                    "./images/item-6.jpg"
+                ],
+                "comments": 2,
+                "likes": 100,
+                "tags": [
+                    "Сауна",
+                    "11 м<sup>2</sup>",
+                    "Helo Pikkutonttu"
+                ],
+                "location": "КП «Нахабино Кантри», дом",
+                "company": "95 градусов"
+            },
+            {
+                "images": [
+                    "./images/item-15.jpg"
+                ],
+                "tags": [
+                    "Сауна",
+                    "4 м<sup>2</sup>",
+                    "Tylo Compact"
+                ],
+                "location": "Москва, квартира",
+                "company": "95 градусов"
+            },
+            {
+                "images": [
+                    "./images/item-8.jpg" 
+                ],
+                "tags": [
+                    "SPA-зона",
+                    "2000 м<sup>2</sup>",
+                    "Klafs" 
+                ],
+                "company": "ASPA"
+            },
+            {
+                "images": [
+                    "./images/item-9.jpg", 
+                    "./images/item-9.jpg", 
+                    "./images/item-9.jpg", 
+                    "./images/item-9.jpg", 
+                    "./images/item-9.jpg", 
+                    "./images/item-9.jpg" 
+                ],
+                "comments": 1,
+                "likes": 256,
+                "tags": [
+                    "Травяная сауна",
+                    "34 м<sup>2</sup>",
+                    "Lang Sauna-Therm"
+                ],
+                "location": "Москва, Termoland",
+                "company": "Контакт Плюс"
+            },
+            {
+                "images": [
+                    "./images/item-10.jpg", 
+                    "./images/item-10.jpg", 
+                    "./images/item-10.jpg", 
+                    "./images/item-10.jpg"
+                ],
+                "likes": 10,
+                "tags": [
+                    "Гималайская сауна",
+                    "65 м<sup>2</sup>",
+                    "IKI Pro"
+                ],
+                "location": "Москва, Termoland",
+                "company": "Контакт Плюс"
+            },
+            {
+                "images": [
+                    "./images/item-11.jpg", 
+                    "./images/item-11.jpg", 
+                    "./images/item-11.jpg", 
+                    "./images/item-11.jpg", 
+                    "./images/item-11.jpg", 
+                    "./images/item-11.jpg" 
+                ],
+                "comments": 100,
+                "likes": 156,
+                "tags": [
+                    "Сауна",
+                    "65 м<sup>2</sup>",
+                    "Helo Saunatonttu", 
+                    "от 1 400 000 ₽"
+                ],
+                "location": "Москва, Termoland",
+                "company": "Контакт Плюс"
+            },
+            {
+                "images": [
+                    "./images/item-12.jpg", 
+                    "./images/item-12.jpg", 
+                    "./images/item-12.jpg", 
+                    "./images/item-12.jpg"
+                ],
+                "tags": [
+                    "Нефритовая сауна",
+                    "65 м<sup>2</sup>",
+                    "IKI"
+                ],
+                "location": "Москва, Termoland",
+                "company": "Контакт Плюс"
+            }
+    ]
+}

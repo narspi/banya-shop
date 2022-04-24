@@ -1,0 +1,36 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+  padding-left: 0;
+  list-style: none;
+  &__item {
+    margin: 0 4px 10px;
+  }
+
+  &__item-btn {
+    margin: 0 4px;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: $tags-bg;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: $black;
+    span {
+        vertical-align: middle;
+    }
+    svg {
+        stroke: $black;
+        vertical-align: middle;
+    }
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        svg{
+            stroke: $white;
+        }
+    }
+  }
+}

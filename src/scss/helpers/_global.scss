@@ -1,0 +1,75 @@
+:root {
+  --max-width: 1820px;
+  --container-padding: 15px;
+  --count-menu: 6
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --max-width: 1340px;
+  }
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --max-width: 1180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  $main-container-max-width: 990px;
+  :root {
+    --max-width: 990px;
+    --container-padding: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  $main-container-max-width: 100%;
+  :root {
+    --max-width: 990px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    min-width: 320px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    font-family: "gilroy";
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  @include make_container(var(--container-padding),var(--max-width));
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 2px;
+}
+
+:focus,:focus-visible,.focus-visible {
+  outline-color: #000;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

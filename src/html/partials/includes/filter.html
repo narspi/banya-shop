@@ -1,0 +1,129 @@
+<div class="filter" id="filter">
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn">
+        <span>Компания</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="filter__accardion-dropdown" data-animation="up">
+      <input
+        class="filter__search"
+        type="search"
+        name="search"
+        placeholder="Найти"
+      />
+      <fieldset
+        class="filter__accardion-fieldset overflow-hidden"
+      >
+        {{#each filter.company}} 
+          {{> check item=this name="company"}} 
+        {{/each}}
+      </fieldset>
+      <button class="filter__show-everything" data-toggle="open">Посмотреть все</button>
+    </div>
+  </div>
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn">
+        <span>Цена</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="filter__accardion-dropdown" data-animation="up">
+      <fieldset
+        class="filter__accardion-fieldset overflow-hidden"
+      >
+        {{#each filter.price}} 
+          {{> check-one item=this name="price"}}
+        {{/each}}
+      </fieldset>
+    </div>
+  </div>
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn">
+        <span>Объем</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="filter__accardion-dropdown" data-animation="up">
+      <fieldset
+        class="filter__accardion-fieldset overflow-hidden"
+      >
+        {{#each filter.volume}} {{> check type="radio" item=this name="price"}}
+        {{/each}}
+      </fieldset>
+    </div>
+  </div>
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn down">
+        <span>Объем парной</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="filter__accardion-dropdown filter__accardion-dropdown--padding"
+      style="visibility: hidden; height: 0px"
+      data-animation="up"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores
+      sunt praesentium, alias ab eveniet omnis quibusdam temporibus expedita
+      asperiores quisquam! Explicabo nesciunt ut sint nemo pariatur debitis,
+      quos ullam.
+    </div>
+  </div>
+  <div class="filter__high-checkbox">
+    Парогенератор
+  </div>
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn down">
+        <span>Установка</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="filter__accardion-dropdown filter__accardion-dropdown--padding"
+      style="visibility: hidden; height: 0px"
+      data-animation="up"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores
+      sunt praesentium, alias ab eveniet omnis quibusdam temporibus expedita
+      asperiores quisquam! Explicabo nesciunt ut sint nemo pariatur debitis,
+      quos ullam.
+    </div>
+  </div>
+  <div class="filter__accardion">
+    <div class="filter__accardion-top">
+      <button class="filter__accardion-btn down">
+        <span>Управление</span>
+        <svg height="16" width="16">
+          <use xlink:href="./images/sprite.svg#icon-arrow-down"></use>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="filter__accardion-dropdown filter__accardion-dropdown--padding"
+      style="visibility: hidden; height: 0px"
+      data-animation="up"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores
+      sunt praesentium, alias ab eveniet omnis quibusdam temporibus expedita
+      asperiores quisquam! Explicabo nesciunt ut sint nemo pariatur debitis,
+      quos ullam.
+    </div>
+  </div>
+  <button class="filter__btn-clear">Очистить фильтр</button>
+</div>

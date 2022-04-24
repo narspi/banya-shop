@@ -1,0 +1,64 @@
+{
+    "company":[
+        {
+            "text": "95 градусов",
+            "disabled": false
+        },
+        {
+            "text": "Контакт Плюс",
+            "disabled": false
+        },
+        {
+            "text": "Твой пар",
+            "disabled": false
+        },
+        {
+            "text": "3D-сауна",
+            "disabled": false
+        },
+        {
+            "text": "IKI",
+            "disabled": false
+        },
+        {
+            "text": "ASPA",
+            "disabled": false
+        }
+    ],
+    "price": [
+        {
+            "text": "до 10 000 ₽",
+            "disabled": false
+        },
+        {
+            "text": "10 001 – 30 000 ₽",
+            "disabled": false
+        },
+        {
+            "text": "30 001 – 50 000 ₽",
+            "disabled": false
+        },
+        {
+            "text": "50 000 ₽ и более",
+            "disabled": false
+        }
+    ],
+    "volume": [
+        {
+            "text": "до 20 кВт",
+            "disabled": false
+        },
+        {
+            "text": "10–20 кВт",
+            "disabled": false
+        },
+        {
+            "text": "20–30 кВт",
+            "disabled": true
+        },
+        {
+            "text": "30 кВт и более",
+            "disabled": true
+        }
+    ]
+}

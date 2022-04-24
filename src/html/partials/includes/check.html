@@ -1,0 +1,16 @@
+<label class="filter__accardion-label">
+    <input
+      class="filter__accardion-check hidden"
+      type="checkbox"
+      name="{{name}}"
+      {{#if item.disabled}}disabled{{/if}}
+    />
+    <span class="filter__accardion-span">
+      <span class="filter__accardion-icon">
+        <svg height="10" width="11">
+          <use xlink:href="./images/sprite.svg#icon-check"></use>
+        </svg>
+      </span>
+      <span class="filter__accardion-text">{{item.text}}</span>
+    </span>
+</label>

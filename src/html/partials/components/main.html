@@ -1,0 +1,220 @@
+<div class="container">
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="#">
+                Печи
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="#">
+                Электрические
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <span>
+                Harvia
+            </span>
+        </li>
+    </ul>
+    <h1 class="main__title">Строительство саун</h1>
+    <ul class="tags">
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>Для квартиры</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>Для дачи</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>Для бизнеса</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>Дизайнерские</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>Недорогие</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__item-btn">
+                <span>до 40 м2</span>
+                <svg height="16" width="16">
+                    <use xlink:href="./images/sprite.svg#icon-close-small"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+    <div class="main__controls">
+        <ul class="main__sort">
+            <li class="main__sort-item">
+                <button class="main__sort-btn active">Сначала популярные</button>
+            </li>
+            <li class="main__sort-item">
+                <button class="main__sort-btn">Новизна</button>
+            </li>
+            <li class="main__sort-item">
+                <button class="main__sort-btn">Цена</button>
+            </li>
+        </ul>
+        <button class="main__toogle-filter">
+            <svg height="16" width="16">
+                <use xlink:href="./images/sprite.svg#icon-toggle-filter"></use>
+            </svg>
+            <span>&nbsp;Скрыть фильтр</span>
+        </button>
+    </div>
+    <div class="main__content">
+        <div class="main__products">
+            <div class="main__items">
+            {{#each global.items}}
+                <div class="main__item">
+                    <a class="main__item-link" href="new.html" aria-label="link to product sauna"></a>
+                    {{#ifequal this.images.length 1}}
+                        <div class="main__images-block">
+                            {{#ifequal this.new true}}
+                            <div class="main__item-new">
+                                new
+                            </div>
+                            {{/ifequal}}
+                            {{#each this.images}}
+                                <div class="main__images-item">
+                                    <img src={{this}} alt="article item">
+                                </div>
+                            {{/each}}
+                            <div class="main__images-row">
+                                {{#if this.comments}}
+                                <button class="main__item-comments">
+                                    <span>{{this.comments}}</span>
+                                    <svg height="16" width="16">
+                                        <use xlink:href="./images/sprite.svg#icon-comments"></use>
+                                    </svg>
+                                </button>
+                                {{/if}}
+                                {{#if this.likes}}
+                                <button class="main__item-likes">
+                                    <span>{{this.likes}}</span>
+                                    <svg height="16" width="16">
+                                        <use xlink:href="./images/sprite.svg#icon-likes"></use>
+                                    </svg>
+                                </button>
+                                {{/if}}
+                            </div>
+                        </div>
+                    {{else}}
+                        <div class="main__images-block">
+                            {{#if this.new}}
+                            <div class="main__item-new">
+                                new
+                            </div>
+                            {{/if}}
+                            <div class="main__images-slider swiper">
+                                <div class="main__images-track swiper-wrapper">
+                                    {{#each this.images}}
+                                        <div class="main__images-item swiper-slide">
+                                            <img src={{this}} alt="article item">
+                                        </div>
+                                    {{/each}}
+                                </div>
+                                <div class="main__images-pagination swiper-pagination"></div>
+                            </div>
+                            <div class="main__images-row">
+                                {{#if this.comments}}
+                                <button class="main__item-comments">
+                                    <span>{{this.comments}}</span>
+                                    <svg height="16" width="16">
+                                        <use xlink:href="./images/sprite.svg#icon-comments"></use>
+                                    </svg>
+                                </button>
+                                {{/if}}
+                                {{#if this.likes}}
+                                <button class="main__item-likes">
+                                    <span>{{this.likes}}</span>
+                                    <svg height="16" width="16">
+                                        <use xlink:href="./images/sprite.svg#icon-likes"></use>
+                                    </svg>
+                                </button>
+                                {{/if}}
+                            </div>
+                        </div>
+                    {{/ifequal}}
+                    <div class="main__tags">
+                        <ul class="main__tags-list">
+                            {{#each this.tags}}
+                            <li class="main__tags-item">
+                                {{#tags}}{{this}}{{/tags}}
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    {{#if this.location}}
+                    <p>
+                        {{this.location}}
+                    </p>
+                    {{/if}}
+                    {{#if this.company}}
+                    <p>
+                        {{this.company}}
+                    </p>
+                    {{/if}}
+                </div>
+            {{/each}}
+            </div>
+            <button class="main__products-show">Показать еще</button>
+            <div class="pagination">
+                <ul class="pagination__block">
+                    <li class="pagination__item active">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">6</a>
+                    </li>
+                    <li class="pagination__item">
+                        <span>...</span>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">99</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#">100</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        {{> filter }}
+    </div>
+</div>
